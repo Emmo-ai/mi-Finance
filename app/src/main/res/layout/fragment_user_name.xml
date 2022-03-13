@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootFrame"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/appBackground"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Start banking with us today!"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/usernameInput"
+            android:hint="@string/username"
+            android:textColorHint="#959595"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:fontFamily="@font/montserrat"
+            android:drawableStart="@drawable/ic_account_circle_24px"
+            android:layout_marginRight="20dp"
+            android:theme="@style/EditTextStyle"
+            android:layout_height="60dp"
+            tools:targetApi="m" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:drawableStart="@drawable/ic_ios_lock"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/montserrat"
+            android:hint="Password"
+            android:inputType="textPersonName|textPassword"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#959595"
+            android:theme="@style/EditTextStyle"
+            tools:targetApi="m" />
+
+    </LinearLayout>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameFab"
+            android:layout_margin="20dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            app:backgroundTint="#959595"
+            />
+
+
+
+
+
+
+</FrameLayout>
